@@ -5,20 +5,26 @@ A beautiful, production-ready React component library built with TypeScript, Tai
 ## 🚀 Components
 
 ### Input Component
+
 A versatile input component with advanced features:
+
 - Multiple input types (text, password, email, number, tel, url, search)
 - Password visibility toggle
-- Clear button functionality  
+- Clear button functionality
 - Three sizes (sm, md, lg)
 - Three variants (default, outline, filled)
 - Error states with validation
 - Smooth animations and micro-interactions
 - React Hook Form integration support
 
-![alt text](image.png)
+![Input-default](./screenshots/input-default.png)
+![Input-error](./screenshots/input-error.png)
+![Input-password](./screenshots/Input-password.png)
 
 ### Toast Component
+
 A notification system with elegant animations:
+
 - Four types (success, error, warning, info)
 - Auto-dismiss with configurable duration
 - Manual close button
@@ -27,8 +33,14 @@ A notification system with elegant animations:
 - Toast container for managing multiple toasts
 - Customizable positioning
 
+  ![Toast-succees](./screenshots/Toast-succees.png)
+  ![Toast-storybook-ui](./screenshots/Toast-storybook-ui.png)
+  ![Toast-showcase](./screenshots/Toast-showcase.png)
+
 ### Sidebar Component
+
 A sliding navigation menu with advanced features:
+
 - Right-sliding animation
 - Nested expandable submenus (up to 2 levels)
 - Icon support with Lucide React
@@ -36,6 +48,9 @@ A sliding navigation menu with advanced features:
 - Smooth animations with Framer Motion
 - Customizable width and styling
 - Mobile-friendly design
+
+![Sidebar-default](./screenshots/Sidebar-default.png)
+![Sidebar-custom-width](./screenshots/Sidebar-custom-width.png)
 
 ## 🛠️ Tech Stack
 
@@ -51,9 +66,9 @@ A sliding navigation menu with advanced features:
 
 Clone the repo and install dependencies:
 
-```bash
-git clone https://github.com/your-username/react-ui-library.git
-cd react-ui-library
+````bash
+git clone https://github.com/TrueMolni/StoryBook.git
+cd StoryBook
 npm install
 npm run storybook
 
@@ -63,9 +78,10 @@ npm run storybook
 Start the development server:
 ```bash
 npm run dev
-```
+````
 
 Run Storybook:
+
 ```bash
 npm run storybook
 ```
@@ -73,6 +89,7 @@ npm run storybook
 ## 📖 Storybook Documentation
 
 Each component includes comprehensive Storybook stories showcasing:
+
 - Default usage
 - All component variants and states
 - Interactive examples
@@ -107,6 +124,7 @@ src/
 ## 🎯 Key Features
 
 ### Design System
+
 - Consistent 8px spacing system
 - Comprehensive color palette with semantic variants
 - Apple-level design aesthetics
@@ -114,6 +132,7 @@ src/
 - Responsive design principles
 
 ### Animation & UX
+
 - Framer Motion animations throughout
 - Progressive disclosure for complex UI
 - Intuitive user interactions
@@ -121,8 +140,8 @@ src/
 - Mobile-first responsive design
 - All components use **Framer Motion** for smooth entry/exit and interactive transitions
 
-
 ### Code Quality
+
 - TypeScript interfaces for all components
 - ESLint and Prettier configuration
 - Clean, modular architecture
@@ -132,6 +151,7 @@ src/
 ## 📱 Component Usage Examples
 
 ### Input Component
+
 ```tsx
 import { Input } from './components/Input';
 
@@ -142,23 +162,21 @@ import { Input } from './components/Input';
   showClearButton={true}
   error={errors.email?.message}
   onChange={(value) => console.log(value)}
-/>
+/>;
 ```
 
 ### Toast Component
+
 ```tsx
 import { Toast, ToastContainer } from './components/Toast';
 
 const [toasts, setToasts] = useState([]);
 
-<ToastContainer 
-  toasts={toasts}
-  position="top-right"
-  onRemove={removeToast}
-/>
+<ToastContainer toasts={toasts} position="top-right" onRemove={removeToast} />;
 ```
 
 ### Sidebar Component
+
 ```tsx
 import { Sidebar } from './components/Sidebar';
 
@@ -167,7 +185,7 @@ import { Sidebar } from './components/Sidebar';
   onClose={() => setSidebarOpen(false)}
   title="Navigation"
   items={menuItems}
-/>
+/>;
 ```
 
 ## 🚀 Scripts
@@ -183,6 +201,7 @@ import { Sidebar } from './components/Sidebar';
 ## 🎨 Design Philosophy
 
 This component library follows modern design principles:
+
 - **Minimalism**: Clean, uncluttered interfaces
 - **Consistency**: Unified spacing, typography, and color systems
 - **Accessibility**: Proper contrast ratios and keyboard navigation
@@ -192,6 +211,7 @@ This component library follows modern design principles:
 ## 📋 Component Props
 
 ### Input Props
+
 - `type`: Input type (text, password, email, etc.)
 - `size`: Component size (sm, md, lg)
 - `variant`: Visual variant (default, outline, filled)
@@ -200,6 +220,7 @@ This component library follows modern design principles:
 - `showPasswordToggle`: Toggle password visibility button
 
 ### Toast Props
+
 - `type`: Toast type (success, error, warning, info)
 - `duration`: Auto-dismiss duration in ms
 - `title`: Optional toast title
@@ -207,6 +228,7 @@ This component library follows modern design principles:
 - `showCloseButton`: Toggle close button
 
 ### Sidebar Props
+
 - `isOpen`: Controls sidebar visibility
 - `items`: Array of menu items with nested structure
 - `title`: Sidebar header title

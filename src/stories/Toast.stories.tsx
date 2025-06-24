@@ -26,6 +26,9 @@ const meta = {
       control: { type: 'number', min: 0, max: 10000, step: 1000 },
     },
     onClose: { action: 'closed' },
+    args: {
+      onClose: () => console.log('Toast closed'), // 🟢 оце спрацює в самому компоненті
+    },
   },
 } satisfies Meta<typeof Toast>;
 
