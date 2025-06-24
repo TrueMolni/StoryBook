@@ -17,8 +17,8 @@ A versatile input component with advanced features:
 - Smooth animations and micro-interactions
 - React Hook Form integration support
 
-![Input-default](./screenshots/input-default.png)
-![Input-error](./screenshots/input-error.png)
+![Input-default](./screenshots/Input-default.png)
+![Input-error](./screenshots/Input-default.png)
 ![Input-password](./screenshots/Input-password.png)
 
 ### Toast Component
