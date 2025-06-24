@@ -114,7 +114,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Header */}
+
       <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -136,9 +136,9 @@ function App() {
         </div>
       </header>
 
-      {/* Main Content */}
+
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Section */}
+  
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Beautiful React Components
@@ -149,9 +149,9 @@ function App() {
           </p>
         </div>
 
-        {/* Components Demo Grid */}
+      
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          {/* Input Components Section */}
+       
           <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Input Components</h3>
@@ -200,7 +200,7 @@ function App() {
             </div>
           </div>
 
-          {/* Toast Components Section */}
+
           <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Toast Notifications</h3>
@@ -267,7 +267,7 @@ function App() {
           </div>
         </div>
 
-        {/* Features Grid */}
+
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -300,7 +300,7 @@ function App() {
           </div>
         </div>
 
-        {/* Call to Action */}
+
         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 text-center text-white">
           <h3 className="text-2xl font-bold mb-4">Ready to Explore?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
@@ -320,7 +320,7 @@ function App() {
         </div>
       </main>
 
-      {/* Sidebar Component */}
+
       <Sidebar
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
@@ -328,7 +328,7 @@ function App() {
         items={sampleMenuItems}
       />
 
-      {/* Toast Container */}
+
       <ToastContainer
         toasts={toasts}
         position="top-right"

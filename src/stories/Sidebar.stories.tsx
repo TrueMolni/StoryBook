@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-// import { fn } from '@storybook/test';
 import { useState } from 'react';
 import {
   Home,
@@ -294,7 +293,6 @@ export const DifferentPositions: Story = {
           </button>
         </div>
 
-        {/* Left Sidebar - Modified styles for left positioning */}
         <div
           className={`fixed top-0 left-0 h-full bg-white shadow-2xl z-50 transition-transform duration-300 ${
             leftOpen ? 'translate-x-0' : '-translate-x-full'
@@ -317,7 +315,7 @@ export const DifferentPositions: Story = {
           </div>
         </div>
 
-        {/* Right Sidebar */}
+
         <Sidebar
           isOpen={rightOpen}
           onClose={() => setRightOpen(false)}
@@ -325,7 +323,7 @@ export const DifferentPositions: Story = {
           items={sampleMenuItems.slice(0, 3)}
         />
 
-        {/* Overlays */}
+ 
         {leftOpen && (
           <div
             className="fixed inset-0 bg-black bg-opacity-50 z-40"

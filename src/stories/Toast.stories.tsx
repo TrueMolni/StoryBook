@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-// import { fn } from '@storybook/test';
+
 import { useState } from 'react';
 import { Toast, ToastContainer } from '../components/Toast';
 import type { ToastProps } from '../components/Toast';
@@ -27,7 +27,7 @@ const meta = {
     },
     onClose: { action: 'closed' },
     args: {
-      onClose: () => console.log('Toast closed'), // 🟢 оце спрацює в самому компоненті
+      onClose: () => console.log('Toast closed'), 
     },
   },
 } satisfies Meta<typeof Toast>;
@@ -49,7 +49,7 @@ export const Error: Story = {
     type: 'error',
     title: 'Error',
     message: 'Something went wrong. Please try again.',
-    duration: 0, // Don't auto-dismiss errors
+    duration: 0, 
   },
 };
 
